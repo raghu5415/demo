@@ -3,14 +3,20 @@ pipeline {
     agent any
 
     stages {
-        stage('step1') {
+        stage('Git') {
             steps {
-                echo 'Hello World'
+                echo 'Hello git'
             }
         }
-        stage('step2') {
+        stage('Maven') {
             steps {
-                echo 'Hello ongole'
+                echo 'Hello maven'
+            }
+        }
+        
+        stage('Tomcat') {
+            steps {
+                echo 'Hello tomcat'
             }
         }
     }
